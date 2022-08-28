@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Exercicio 3 Curso</title>
+    <meta charset="utf-8">
+	<script>
+	
+		
+		function calculaNotaFinal(notaAluno){
+	
+			var notaAluno =  parseInt(document.getElementById("notaAluno").value);
+		
+	
+			if(Math.round(notaAluno) <40){
+				alert("Aluno Reprovado com nota: " + notaAluno);
+			}
+			else{
+				var notaArredondada =0;
+				if(Math.round(notaAluno) > notaAluno){
+					notaArredondada = Math.round(notaAluno);
+					alert("Aluno obteve a nota (arredondada): "+ notaArredondada);
+				}
+				else{
+					alert("Aluno obteve a nota: "+ notaAluno);
+				}
+			}
+		}
+		
+	</script>
+  </head>
+  
+  <body>
+    <form action="">
+	  <label for="fname">Nota do Aluno:</label>
+	  <input type="text" id="notaAluno" name="notaAluno"> 
+	  <button onclick="calculaNotaFinal()">Calcular</button>
+	</form>
+</html>
