@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Exercicio 3 Curso</title>
+    <meta charset="utf-8">
+	<script>
+	
+		
+		function calculaArray(){
+	
+			var inteiroEntrada =  parseInt(document.getElementById("inteiroEntrada").value);
+		
+			var arrayCompleto = [];
+			
+			for(i=0; i< inteiroEntrada; i++){
+			
+				if(i%5 == 0){
+				
+					//divisivel por 5
+					arrayCompleto[i] = "Luidy";
+					
+				}
+				else if (i%9 ==0 ){
+					//divisivel por 9
+					arrayCompleto[i] = "Moura";
+				}
+				else{
+					arrayCompleto[i] = i+1;
+				}
+			
+			}
+			
+			alert(arrayCompleto);
+			
+	
+		}
+		
+	</script>
+  </head>
+  
+  <body>
+    <form action="">
+	  <label for="fname">Digite o inteiro :</label>
+	  <input type="text" id="inteiroEntrada" name="inteiroEntrada"> 
+	  <button onclick="calculaArray()">Calcular</button>
+	</form>
+</html>
